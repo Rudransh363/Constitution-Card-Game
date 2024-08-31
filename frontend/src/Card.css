@@ -1,0 +1,30 @@
+.card-container {
+    perspective: 1000px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.card {
+    width: 150px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backface-visibility: hidden;
+    transition: transform 0.6s;
+}
+
+.card.front {
+    background-color: #f0f0f0;
+}
+
+.card.back {
+    background-color: #333;
+    color: white;
+    transform: rotateY(180deg);
+}

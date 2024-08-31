@@ -1,0 +1,21 @@
+.game-board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.question-section, .answer-section {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.question-section {
+    flex-direction: column;
+}
+
+.answer-section {
+    flex-wrap: wrap;
+    gap: 10px;
+}
